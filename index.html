@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index_style.css" />
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <title>Bouncy Laberinth</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <div id="closeButton" onclick="cerrarVentana()">X</div>
+        <img src="img/title.svg" width="1000px" class="titulo" id="tituloImg">
+        <img src="img/start.svg" width="200px" id="option01" onclick="empezar()">
+        <img src="img/extra.svg" width="200px" id="option02" onclick="extra()">
+        <img src="img/conf.svg" width="200px" id="option03" onclick="config()">
+    </div>
+    <div class="ruedas">
+        <img class="rueda" id="rueda" src="img/gear.png">
+        <img class="rueda2" id="rueda2" src="img/gear.png">
+    </div>
+    <footer>
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+       function alternarID() {
+            var tituloImg = document.getElementById('tituloImg');
+
+            // Verificar el ID actual y cambiarlo al otro
+            if (tituloImg.id === 'tituloImg') {
+                tituloImg.id = 'bounce';
+                setTimeout(function() {
+                    tituloImg.id = 'tituloImg';
+                }, 2500);
+            } else {
+                tituloImg.id = 'tituloImg';
+            }
+        }
+        // Alternar el ID cada 8 segundos
+        setInterval(alternarID, 8000);
+
+    </script>
+</body>
+
+</html>

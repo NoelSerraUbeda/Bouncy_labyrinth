@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/index_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/level_select.css" />
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <title>Bouncy Laberinth</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.svg">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div id="closeButton" onclick="back()" class="turn">↺</div>
+        <div class="elemento" onclick="redirigir('maps/map1.html')">1</div>
+        <div class="elemento" onclick="redirigir('maps/map2.html')">2</div>
+        <div class="elemento" onclick="redirigir('maps/map3.html')">3</div>
+        <div class="elemento" onclick="redirigir('maps/map4.html')">4</div>
+        <div class="elemento" onclick="redirigir('maps/map5.html')">5</div>
+        <div class="elemento" onclick="redirigir('maps/map6.html')">6</div>
+        <div class="elemento" onclick="redirigir('maps/map7.html')">7</div>
+        <div class="elemento" onclick="redirigir('maps/map8.html')">8</div>
+        <div class="elemento" onclick="redirigir('maps/map9.html')">9</div>
+        <div class="elemento" onclick="redirigir('maps/map10.html')">10</div>
+        <div class="elemento" onclick="redirigir('maps/map11.html')">11</div>
+        <div class="elemento" onclick="redirigir('maps/map12.html')">12</div>
+        <div class="elemento" onclick="redirigir('maps/map13.html')">13</div>
+        <div class="elemento" onclick="redirigir('maps/map14.html')">14</div>
+    </div>
+    <div class="ruedas">
+        <img class="rueda" id="rueda" src="img/gear.png">
+        <img class="rueda2" id="rueda2" src="img/gear.png">
+    </div>
+    <footer>
+    </footer>
+
+    <script>
+        // Función para cerrar la ventana
+        function cerrarVentana() {
+            window.close();
+        }
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</body>
+
+</html>
